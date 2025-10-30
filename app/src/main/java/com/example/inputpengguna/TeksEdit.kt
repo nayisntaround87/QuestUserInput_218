@@ -13,6 +13,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.unit.dp
 
@@ -74,10 +75,11 @@ fun FormDataDiri(modifier: Modifier) {
 
     HorizontalDivider(
         modifier = Modifier.padding(
-            bottom = dimensionResource(30dp),
-            top = dimensionResource(
-                30dp)
-            )),
+            bottom = dimensionResource(R.dimen.padding_medium),
+            top = dimensionResource(R.dimen.padding_medium
+        )),
+        thickness = dimensionResource(R.dimen.divider_tipis),
+        color = Color.DarkGray
     )
 
 }
