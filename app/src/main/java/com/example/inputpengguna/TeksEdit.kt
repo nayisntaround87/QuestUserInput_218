@@ -17,6 +17,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 
 @Composable
@@ -93,6 +94,8 @@ fun FormDataDiri(modifier: Modifier) {
             alamat=textAlamat
         }
     ){
-
+        Text(text = stringResource(R.string.submit))
     }
+
+
 }
