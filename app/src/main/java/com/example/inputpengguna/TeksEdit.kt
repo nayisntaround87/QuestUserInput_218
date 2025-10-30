@@ -1,10 +1,17 @@
 package com.example.inputpengguna
 
 import android.R
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun FormDataDiri(modifier: Modifier
@@ -21,6 +28,13 @@ fun FormDataDiri(modifier: Modifier
 
     val gender:List<string> = listOf("Laki-laki", "Perempuan")
 
-
-
+    Column(modifier = Modifier.padding(top = 50.dp),
+    verticalArrangement = Arrangement.Top,
+    horizontalAlignment = Alignment.CenterHorizontally) {
+        OutlinedTextField(
+            value = textNama,
+            singleLine = true,
+            shape = MaterialTheme {  }
+        )
+    }
 }
